@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="logo">
+          <a href="index.html" class="nav-link">
+            <img src="right-arrow.png" width="10%" />
+            <span class="link-text"></span>
+          </a>
+        </li>
+        <li>
+          <a href="index.html" class="nav-link">
+            <img src="home.png" width="10%" />
+            <span class="link-text">HOME</span>
+          </a>
+        </li>
+        <li>
+          <a href="blog.html" class="nav-link">
+            <img src="book.png" width="10%" />
+            <span class="link-text">BLOG</span>
+          </a>
+        </li>
+        <li>
+          <a href="portfolio.html" class="nav-link">
+            <img src="code.png" width="10%" />
+            <span class="link-text">PORTFOLIO</span>
+          </a>
+        </li>
+        <li>
+          <a href="resume.html" class="nav-link">
+            <img src="writing.png" width="10%" />
+            <span class="link-text">RESUME</span>
+          </a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-link">
+            <img src="email.png" width="10%" />
+            <span class="link-text">CONTACT</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1 class="portfolio-title">Portfolio</h1>
+      <div class="project-container">
+          <div class="project">
+            <a href="index.html">
+              <img
+                src="homepage.png"
+                alt="Image of Website"
+                class="neat-image"
+              />
+            </a>
+            <div class="project-details">
+              <h3 class="project-name">Personal Website</h3>
+              <p class="project-description">
+                This is a website I made as a part of the Hack4Impact starter kit. While making this project, I revised my fundamentals in HTML, CSS, and git
+              </p>
+              <a href="index.html" class="button">Learn More</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <a href="#" onclick="toggle();"><img src="tongue.png" class="neat-image"></a> 
+            <div class="vid">
+                <video width="320" height="240" controls>
+                    <source
+                      src="robotongue.MOV"
+                      type="video/mp4"
+                    />
+                </video>
+            </div>
+            <script type="text/javascript">
+                function toggle(){
+                    var vid= document.querySelector(".vid")
+                    vid.classList.toggle("active")
+                }
+            </script>
+            <div class="project-details">
+              <h3 class="project-name">Robotic Tongue</h3>
+              <p class="project-description">
+                Developed code for robotic tongue to move in certain positions based on anatomically
+                 accurate tongue muscle movement as an apprentice to Jeff Mielke. Coded the interface 
+                of the interactive software using HTML and CSS and supervised code for the servo control
+              </p>
+            </div>
+          </div>
+
+          <div class="project">
+              <img
+                src="UCSC.png"
+                alt="Image of example detection"
+                class="neat-image"
+              />
+            <div class="project-details">
+              <h3 class="project-name">Vocal Tract Ultrasound Detection</h3>
+              <p class="project-description">
+                Creating a Vocal Tract Ultrasound Detection Citizen Science app used to detect speech 
+                sounds using ultrasound images in the UCSC CS Lab
+              </p>
+            </div>
+          </div>
+          <div class="project">
+              <img
+                src="pi.png"
+                alt="Image of Language translator device"
+                class="neat-image"
+              />
+            <div class="project-details">
+              <p class="project-name">Language Translator Device</p>
+              <p class="project-description">
+                Created a portable Language Translator using a raspberry pi and the Google Media Translate API
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+        © 2023 Adarsh's Website | All Rights Reserved
+      </footer>
+  </body>
+</html>
