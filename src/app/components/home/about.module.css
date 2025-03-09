@@ -1,0 +1,61 @@
+/* Container for the entire section */
+.resumeContainer {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center vertically */
+    max-width: 1200px;
+    margin: 50px auto; /* Center the section */
+    padding: 40px;
+    font-family: "Arial", sans-serif; /* Clean, modern font */
+    background-color: #ffffff; /* White background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Left-side content (title and text) */
+  .textContent {
+    flex: 1;
+    margin-right: 40px; /* Space between text and image */
+  }
+  
+  /* Emoji styling */
+  .greetingEmoji {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Title styling */
+  .pageTitle {
+    font-size: 2.8rem; /* Large, bold title */
+    color: #000000; /* Black for professional look */
+    font-weight: 700; /* Bold font */
+    line-height: 1.2; /* Closer line spacing */
+    margin-bottom: 20px;
+  }
+  
+  /* Subtitle styling */
+  .subtitle {
+    font-size: 1.2rem; /* Slightly smaller descriptive text */
+    color: #555555; /* Gray for readability */
+    line-height: 1.6; /* Comfortable line spacing */
+  }
+  
+  /* Image styling */
+  .profileImage {
+    flex-shrink: 0;
+    width: 300px; /* Fixed size for the image */
+    height: 300px; /* Make it a square */
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover; /* Maintain aspect ratio and crop */
+    background: linear-gradient(
+      135deg,
+      #ffd700,
+      #ff7f50,
+      #ff69b4,
+      #87cefa,
+      #32cd32
+    ); /* Vibrant gradient */
+    padding: 10px; /* Space between image and background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  

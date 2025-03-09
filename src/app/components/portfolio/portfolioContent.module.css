@@ -1,0 +1,120 @@
+/* Container for the portfolio page */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif; /* Modern font for a clean look */
+  background-color: #000000; /* Pure black background */
+  color: #cad1d7; /* Light gray text for better contrast */
+}
+
+/* Portfolio title */
+.portfolioTitle {
+  font-size: 3rem;
+  color: #cad1d7;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-transform: uppercase; /* Add uppercase for a bold design */
+  letter-spacing: 1.5px; /* Slight spacing for elegance */
+}
+
+/* Project container layout */
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 30px; /* Space between cards */
+  padding: 20px;
+}
+
+/* Individual project card */
+.project {
+  background-color: #1c1c1e; /* Dark gray card background for contrast */
+  border: 1px solid #2c2c2e; /* Subtle border to define the card */
+  border-radius: 12px; /* Slightly rounded corners for a modern feel */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Stronger shadow for depth */
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+/* Project hover effect */
+.project:hover {
+  transform: translateY(-8px); /* Lift the card up slightly */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); /* Stronger shadow for hover */
+}
+
+/* Image inside the project card */
+.neatImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* Maintain image aspect ratio */
+  border-bottom: 2px solid #2c2c2e; /* Separate image with a subtle border */
+  margin-bottom: 15px;
+  border-radius: 8px; /* Smooth rounded edges */
+}
+
+/* Details inside the project card */
+.projectDetails {
+  padding: 16px;
+  text-align: center;
+}
+
+/* Project name/title */
+.projectName {
+  font-size: 1.8rem;
+  color: #ffffff; /* White text for prominence */
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: capitalize; /* Stylish text formatting */
+}
+
+/* Project description */
+.projectDescription {
+  font-size: 1rem;
+  color: #a9b3c1; /* Lighter gray for descriptions */
+  margin-bottom: 16px;
+  line-height: 1.5;
+  text-align: justify; /* Improve readability */
+}
+
+/* Button for "Read More" */
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #0078ff; /* Bright blue for visibility */
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px; /* Smooth rounded corners */
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add shadow for hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .portfolioTitle {
+    font-size: 2.5rem; /* Adjust title size */
+  }
+
+  .projectName {
+    font-size: 1.5rem;
+  }
+
+  .projectDescription {
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+}

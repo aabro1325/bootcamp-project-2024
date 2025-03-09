@@ -1,0 +1,59 @@
+/* Container for resume content */
+.resumeContainer {
+    max-width: 900px;
+    margin: 40px auto; /* Slightly reduced margin for a tighter layout */
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer shadow for subtle depth */
+    border-radius: 10px; /* Slightly more rounded corners for a modern feel */
+    text-align: left; /* Left-aligned text for readability */
+  }
+  
+  /* Page title styling */
+  .pageTitle {
+    font-size: 2.2rem; /* Slightly larger font size for emphasis */
+    color: #333333; /* Neutral dark gray for title */
+    margin-bottom: 25px;
+    text-align: center; /* Keep title centered */
+    font-weight: bold; /* Bold for clarity */
+    border-bottom: 2px solid #dddddd; /* Subtle underline for separation */
+    padding-bottom: 10px; /* Space between text and underline */
+  }
+  
+  /* Button styling */
+  .button {
+    display: inline-block;
+    padding: 12px 25px; /* Adjusted padding for a larger, more clickable area */
+    font-size: 1rem;
+    font-weight: 500; /* Slightly thicker font for readability */
+    color: #ffffff; /* White text for contrast */
+    background-color: #0056b3; /* Professional darker blue for buttons */
+    text-decoration: none;
+    border-radius: 8px; /* Slightly more rounded corners for consistency */
+    border: 1px solid #004b9a; /* Add a border for a polished look */
+    cursor: pointer; /* Pointer cursor for clarity */
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #003f82; /* Darker blue on hover */
+    border-color: #003366; /* Subtle border color change on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resumeContainer {
+      padding: 20px; /* Reduce padding for smaller screens */
+      margin: 30px 15px; /* Add horizontal margin for smaller viewports */
+    }
+  
+    .pageTitle {
+      font-size: 1.8rem; /* Adjust title size for mobile */
+    }
+  
+    .button {
+      font-size: 0.9rem; /* Slightly smaller text for buttons on mobile */
+      padding: 10px 20px; /* Adjust padding for smaller buttons */
+    }
+  }
+  

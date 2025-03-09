@@ -1,0 +1,104 @@
+/* Container for the entire blog page */
+.blogContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #000; /* Dark background to match your screenshot */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff; /* Light text for dark background */
+}
+
+/* Blog title */
+.blogTitle {
+  font-size: 2.5rem;
+  color: #cad1d7;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Blog list container */
+.blogList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+  gap: 20px; /* Space between blog cards */
+  padding: 20px 0;
+}
+
+/* Blog card */
+.blogCard {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center all children horizontally */
+  background-color: #1c1c1e; /* Dark gray background for cards */
+  border-radius: 15px; /* Smoothly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+  padding: 20px; /* Add spacing inside the card */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation for hover effect */
+}
+
+/* Blog card hover effect */
+.blogCard:hover {
+  transform: translateY(-5px); /* Lift up slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+/* Blog name */
+.blogName {
+  font-size: 1.5rem;
+  color: #ffffff; /* White text for better visibility */
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center; /* Center-align the title */
+}
+
+/* Blog description */
+.blogDescription {
+  font-size: 1rem;
+  color: #cad1d7; /* Lighter gray for readability */
+  text-align: center; /* Center-align the description */
+  margin-bottom: 16px;
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Link for "Read More" */
+.blogLink {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffffff; /* White text for button */
+  background-color: #007bff; /* Bootstrap blue */
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, transform 0.2s ease; /* Smooth transition for hover */
+}
+
+.blogLink:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .blogContainer {
+    padding: 10px;
+  }
+
+  .blogTitle {
+    font-size: 2.5rem;
+  }
+
+  .blogName {
+    font-size: 1.2rem;
+  }
+
+  .blogDescription {
+    font-size: 0.9rem;
+  }
+
+  .blogLink {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
